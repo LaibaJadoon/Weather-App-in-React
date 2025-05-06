@@ -1,0 +1,17 @@
+.time-display {
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Segoe UI", sans-serif;
+    color: #333;
+  }
+  
+  .time {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .date {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  

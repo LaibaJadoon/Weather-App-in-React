@@ -1,0 +1,88 @@
+/* Center the app container on the screen */
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    transition: background 0.5s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-color: #f4f4f4; 
+  }
+  
+  /* Updated container to be wider and centered */
+  .app-container {
+    padding: 20px;
+    max-width: 900px;  /* Increased width to accommodate the weather info */
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.7); /* Optional: to make content easier to read */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Flexbox layout for info-grid */
+  .info-grid {
+    display: flex;
+    justify-content: space-between;  /* Make items align in a row */
+    gap: 20px;  /* Adjust space between items */
+    margin-top: 20px;
+  }
+  
+  .info-grid .info-item {
+    flex: 1; /* Ensure each item takes equal space */
+    text-align: center;
+  }
+  
+  .clear-bg {
+    background-image: url('https://media.istockphoto.com/id/1026330454/photo/clouds-and-bright-blue-sky-background-panoramic-angle-view.webp?a=1&b=1&s=612x612&w=0&k=20&c=s8bBLq4KhMA2VxrT-q_xK26upEGSGFAJZoOm1w-nweU=');
+  }
+  
+  .clouds-bg {
+    background-image: url('https://media.istockphoto.com/id/912014918/photo/blue-sky-with-cloud-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=g3mBVQkqzlgigJmSV9MdJnGIizB3NWjG7DuyNLp3FAM=');
+  
+  }
+  
+  .rain-bg {
+    background-image: url('https://plus.unsplash.com/premium_photo-1671229652411-4468b946b787?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cmFpbnl8ZW58MHx8MHx8fDA%3D');
+  
+  }
+  
+  .snow-bg {
+    background-image: url('https://plus.unsplash.com/premium_photo-1667579187855-fed841be2ec9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c25vd3xlbnwwfHwwfHx8MA%3D%3D');
+    
+  }
+  
+  .storm-bg {
+    background-image: url('https://images.unsplash.com/photo-1696351808576-e882b848b93e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8');
+   
+  }
+  
+  .drizzle-bg {
+    background-image: url('https://plus.unsplash.com/premium_photo-1666258222698-3345b71cdb59?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cmFpbiUyMGRyb3B8ZW58MHx8MHx8fDA%3D');
+    
+  }
+  
+  .fog-bg {
+    background-image: url('https://images.unsplash.com/photo-1585651686997-5516bd534e9d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGZvZ3xlbnwwfHwwfHx8MA%3D%3D');
+    
+  }
+  
+  .default-bg {
+    background-color: #e0e0e0;
+    
+  }
+
+
+  @media (max-width: 500px) {
+    .weather-card,
+    .info-grid {
+      padding: 15px;
+    }
+  
+    .temp {
+      font-size: 1.8rem;
+    }
+  
+  }

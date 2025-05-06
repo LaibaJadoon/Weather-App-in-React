@@ -1,0 +1,29 @@
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 16px;
+    margin: 20px auto;
+    max-width: 500px;
+    text-align: center;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  .info-item {
+    background-color: #eef2f3;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-item h4 {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  .info-item p {
+    margin: 0;
+    font-size: 1rem;
+    color: #222;
+  }
+  
