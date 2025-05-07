@@ -1,27 +1,29 @@
 /* Center the app container on the screen */
 .App {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-    transition: background 0.5s ease-in-out;
-    background-size: cover;
-    background-position: center;
-    background-color: #f4f4f4; 
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+  transition: background 0.5s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-color: #f4f4f4;
+  width: 100%;
+}
   
   /* Updated container to be wider and centered */
   .app-container {
     padding: 20px;
-    max-width: 900px;  /* Increased width to accommodate the weather info */
+    max-width: 900px;
     width: 100%;
+    height: 98vh; /* Change from 100vh to auto */
     box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 0.7); /* Optional: to make content easier to read */
+    background-color: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
-  
   /* Flexbox layout for info-grid */
   .info-grid {
     display: flex;
